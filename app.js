@@ -52,7 +52,7 @@ app.post("/new-entry", function(req, res){
         dbObj.collection("games").save(req.body, function(err, result){
             console.log("data saved");
             db.close();
-            res.redirect("/");
+            res.redirect("/games");
         });
     });
 
